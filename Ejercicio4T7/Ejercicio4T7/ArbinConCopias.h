@@ -55,7 +55,7 @@ public:
 	 */
 	template <class T>
 	static Arbin<T> construyeYVacia(Arbin<T> &iz, const T&elem, Arbin<T> &dr) {
-		Arbin<T> ret(new Arbin<T>::Nodo(iz._ra, elem, dr._ra));
+		Arbin<T> ret(new typename Arbin<T>::Nodo(iz._ra, elem, dr._ra));
 		iz._ra = NULL;
 		dr._ra = NULL;
 		return ret;
